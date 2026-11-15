@@ -154,6 +154,13 @@ Ce format (`lambda/` et `skill-package/` à la racine) est l'un des deux que l'i
 
 Pendant l'appel à Claude, Alexa dit « Je réfléchis… ». La skill garde en mémoire les cinq derniers échanges de la session, ce qui permet d'enchaîner avec « et au coucher du soleil ? ». Après chaque réponse, elle attend la suite ; « non merci », « c'est tout » ou « stop » ferment la session.
 
+### Répondre à une question de Claude
+
+Quand Claude demande une précision (« Quel mois ? »), tu peux répondre librement : « en novembre », « c'est pour un gâteau », ou juste « novembre ». Deux mécanismes le permettent :
+
+- des intents `Reply…Intent` pour les débuts de réponse courants (en, le, la, un, pour, avec, je, c'est, oui, etc.) ;
+- un intent `FreeReplyIntent` qui capte une réponse sans mot d'introduction, grâce à un type de slot personnalisé `FreeText`. Ce type sert d'attrape-tout : Alexa le reconnaît moins bien qu'une phrase avec mot d'introduction, donc un mot rare peut être mal transcrit.
+
 ### Trois choix qui s'écartent du cahier des charges
 
 **Un intent par tournure de question.** Alexa ne transmet à la skill que le contenu du slot, sans la phrase qui l'introduit : pour « pourquoi le ciel est bleu », la skill reçoit seulement « le ciel est bleu ». Avec un seul `QuestionIntent`, Claude ne saurait pas si tu as dit pourquoi, quand ou où. Chaque tournure a donc son propre intent (`QuestionPourquoiIntent`, `QuestionCommentIntent`, etc.), et la table `QUESTION_PREFIXES` de `config.py` remet le bon début de phrase. Pour ajouter une tournure, ajoute un intent dans `fr-FR.json` et une ligne dans cette table ; un test vérifie que les deux restent synchronisés.

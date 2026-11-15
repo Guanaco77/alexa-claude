@@ -450,6 +450,498 @@
           ]
         },
         {
+          "name": "ReplyEnIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "en {query}"
+          ]
+        },
+        {
+          "name": "ReplyLeIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "le {query}"
+          ]
+        },
+        {
+          "name": "ReplyLaIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "la {query}"
+          ]
+        },
+        {
+          "name": "ReplyLesIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "les {query}"
+          ]
+        },
+        {
+          "name": "ReplyUnIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "un {query}"
+          ]
+        },
+        {
+          "name": "ReplyUneIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "une {query}"
+          ]
+        },
+        {
+          "name": "ReplyDesIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "des {query}"
+          ]
+        },
+        {
+          "name": "ReplyDuIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "du {query}"
+          ]
+        },
+        {
+          "name": "ReplyDeIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "de {query}"
+          ]
+        },
+        {
+          "name": "ReplyAuIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "au {query}"
+          ]
+        },
+        {
+          "name": "ReplyAuxIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "aux {query}"
+          ]
+        },
+        {
+          "name": "ReplyAIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "à {query}"
+          ]
+        },
+        {
+          "name": "ReplyPourIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "pour {query}"
+          ]
+        },
+        {
+          "name": "ReplyAvecIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "avec {query}"
+          ]
+        },
+        {
+          "name": "ReplySansIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "sans {query}"
+          ]
+        },
+        {
+          "name": "ReplyDansIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "dans {query}"
+          ]
+        },
+        {
+          "name": "ReplySurIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "sur {query}"
+          ]
+        },
+        {
+          "name": "ReplyChezIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "chez {query}"
+          ]
+        },
+        {
+          "name": "ReplyVersIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "vers {query}"
+          ]
+        },
+        {
+          "name": "ReplyDepuisIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "depuis {query}"
+          ]
+        },
+        {
+          "name": "ReplyPendantIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "pendant {query}"
+          ]
+        },
+        {
+          "name": "ReplyAvantIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "avant {query}"
+          ]
+        },
+        {
+          "name": "ReplyApresIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "après {query}"
+          ]
+        },
+        {
+          "name": "ReplyPlutotIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "plutôt {query}"
+          ]
+        },
+        {
+          "name": "ReplySurtoutIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "surtout {query}"
+          ]
+        },
+        {
+          "name": "ReplyOuiIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "oui {query}"
+          ]
+        },
+        {
+          "name": "ReplyJeIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "je {query}"
+          ]
+        },
+        {
+          "name": "ReplyJAiIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "j'ai {query}"
+          ]
+        },
+        {
+          "name": "ReplyCEstIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "c'est {query}"
+          ]
+        },
+        {
+          "name": "ReplyIlIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "il {query}"
+          ]
+        },
+        {
+          "name": "ReplyElleIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "elle {query}"
+          ]
+        },
+        {
+          "name": "ReplyOnIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "on {query}"
+          ]
+        },
+        {
+          "name": "ReplyNousIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "nous {query}"
+          ]
+        },
+        {
+          "name": "ReplyMoiIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "moi {query}"
+          ]
+        },
+        {
+          "name": "ReplyMonIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "mon {query}"
+          ]
+        },
+        {
+          "name": "ReplyMaIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "ma {query}"
+          ]
+        },
+        {
+          "name": "ReplyMesIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "mes {query}"
+          ]
+        },
+        {
+          "name": "ReplyCeIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "ce {query}"
+          ]
+        },
+        {
+          "name": "ReplyCetteIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "cette {query}"
+          ]
+        },
+        {
+          "name": "ReplyCaIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "ça {query}"
+          ]
+        },
+        {
+          "name": "FreeReplyIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "FreeText"
+            }
+          ],
+          "samples": [
+            "{query}"
+          ]
+        },
+        {
           "name": "AMAZON.HelpIntent",
           "samples": []
         },
@@ -489,7 +981,283 @@
           "samples": []
         }
       ],
-      "types": []
+      "types": [
+        {
+          "name": "FreeText",
+          "values": [
+            {
+              "name": {
+                "value": "novembre"
+              }
+            },
+            {
+              "name": {
+                "value": "janvier"
+              }
+            },
+            {
+              "name": {
+                "value": "juillet"
+              }
+            },
+            {
+              "name": {
+                "value": "lundi"
+              }
+            },
+            {
+              "name": {
+                "value": "demain"
+              }
+            },
+            {
+              "name": {
+                "value": "ce soir"
+              }
+            },
+            {
+              "name": {
+                "value": "hier matin"
+              }
+            },
+            {
+              "name": {
+                "value": "trois"
+              }
+            },
+            {
+              "name": {
+                "value": "douze"
+              }
+            },
+            {
+              "name": {
+                "value": "vingt-cinq"
+              }
+            },
+            {
+              "name": {
+                "value": "deux mille"
+              }
+            },
+            {
+              "name": {
+                "value": "cent cinquante"
+              }
+            },
+            {
+              "name": {
+                "value": "bruxelles"
+              }
+            },
+            {
+              "name": {
+                "value": "paris"
+              }
+            },
+            {
+              "name": {
+                "value": "namur"
+              }
+            },
+            {
+              "name": {
+                "value": "belgique"
+              }
+            },
+            {
+              "name": {
+                "value": "italie"
+              }
+            },
+            {
+              "name": {
+                "value": "rouge"
+              }
+            },
+            {
+              "name": {
+                "value": "bleu foncé"
+              }
+            },
+            {
+              "name": {
+                "value": "chocolat"
+              }
+            },
+            {
+              "name": {
+                "value": "tennis"
+              }
+            },
+            {
+              "name": {
+                "value": "jardinage"
+              }
+            },
+            {
+              "name": {
+                "value": "python"
+              }
+            },
+            {
+              "name": {
+                "value": "mozart"
+              }
+            },
+            {
+              "name": {
+                "value": "victor hugo"
+              }
+            },
+            {
+              "name": {
+                "value": "marie curie"
+              }
+            },
+            {
+              "name": {
+                "value": "la première"
+              }
+            },
+            {
+              "name": {
+                "value": "le deuxième"
+              }
+            },
+            {
+              "name": {
+                "value": "les deux"
+              }
+            },
+            {
+              "name": {
+                "value": "aucun"
+              }
+            },
+            {
+              "name": {
+                "value": "peu importe"
+              }
+            },
+            {
+              "name": {
+                "value": "comme tu veux"
+              }
+            },
+            {
+              "name": {
+                "value": "n'importe lequel"
+              }
+            },
+            {
+              "name": {
+                "value": "quelque chose de simple"
+              }
+            },
+            {
+              "name": {
+                "value": "assez rapidement"
+              }
+            },
+            {
+              "name": {
+                "value": "environ une heure"
+              }
+            },
+            {
+              "name": {
+                "value": "quatre personnes"
+              }
+            },
+            {
+              "name": {
+                "value": "débutant"
+              }
+            },
+            {
+              "name": {
+                "value": "niveau avancé"
+              }
+            },
+            {
+              "name": {
+                "value": "végétarien"
+              }
+            },
+            {
+              "name": {
+                "value": "tout à fait"
+              }
+            },
+            {
+              "name": {
+                "value": "pas vraiment"
+              }
+            },
+            {
+              "name": {
+                "value": "exactement"
+              }
+            },
+            {
+              "name": {
+                "value": "bien sûr"
+              }
+            },
+            {
+              "name": {
+                "value": "continue"
+              }
+            },
+            {
+              "name": {
+                "value": "vas-y"
+              }
+            },
+            {
+              "name": {
+                "value": "encore"
+              }
+            },
+            {
+              "name": {
+                "value": "la suite"
+              }
+            },
+            {
+              "name": {
+                "value": "plus court"
+              }
+            },
+            {
+              "name": {
+                "value": "plus de détails"
+              }
+            },
+            {
+              "name": {
+                "value": "en hiver près de la mer"
+              }
+            },
+            {
+              "name": {
+                "value": "un gâteau au chocolat pour six personnes"
+              }
+            },
+            {
+              "name": {
+                "value": "mon fils de dix ans"
+              }
+            },
+            {
+              "name": {
+                "value": "samedi prochain vers midi"
+              }
+            }
+          ]
+        }
+      ]
     }
   }
 }

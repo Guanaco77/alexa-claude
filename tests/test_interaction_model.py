@@ -47,6 +47,8 @@ def test_model_and_config_list_the_same_question_intents():
 
 def test_every_utterance_has_a_carrier_phrase_and_one_slot():
     for intent in custom_intents():
+        if intent["name"] == "FreeReplyIntent":
+            continue
         assert intent["slots"] == [{"name": "query", "type": "AMAZON.SearchQuery"}]
         assert intent["samples"], intent["name"]
         for sample in intent["samples"]:
@@ -102,3 +104,13 @@ def test_no_secret_is_tracked_or_present():
             continue
         with open(full, encoding="utf-8", errors="ignore") as f:
             assert not pattern.search(f.read()), "clé possible dans %s" % path
+
+
+def test_free_reply_intent_uses_a_custom_slot_alone():
+    """Un slot seul n'est permis qu'avec un type personnalisé, pas SearchQuery."""
+    model = load_model()
+    intent = next(i for i in model["intents"] if i["name"] == "FreeReplyIntent")
+    assert intent["slots"] == [{"name": "query", "type": "FreeText"}]
+    assert intent["samples"] == ["{query}"]
+    types = {t["name"]: t for t in model["types"]}
+    assert len(types["FreeText"]["values"]) >= 30

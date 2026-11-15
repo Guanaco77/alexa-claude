@@ -162,6 +162,25 @@ def test_followup_sends_history(load_event, api):
     assert len(result["sessionAttributes"]["history"]) == 4
 
 
+@pytest.mark.parametrize(
+    "intent_name, slot_value, expected",
+    [
+        ("ReplyEnIntent", "novembre", "en novembre"),
+        ("ReplyCEstIntent", "pour un gâteau", "c'est pour un gâteau"),
+        ("FreeReplyIntent", "novembre", "novembre"),
+    ],
+)
+def test_reply_to_a_question_from_claude(load_event, api, intent_name, slot_value, expected):
+    event = load_event("question_followup")
+    event["request"]["intent"]["name"] = intent_name
+    event["request"]["intent"]["slots"]["query"]["value"] = slot_value
+    result = invoke(event)
+    messages = api.calls[0]["json"]["messages"]
+    assert messages[-1] == {"role": "user", "content": expected}
+    assert len(messages) == 3
+    assert is_open(result)
+
+
 def test_history_is_capped_at_five_exchanges(load_event, api):
     event = load_event("question_followup")
     history = []
