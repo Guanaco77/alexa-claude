@@ -160,7 +160,7 @@ Pendant l'appel à Claude, Alexa dit « Je réfléchis… ». La skill garde en 
 
 **`claude_secrets.py` au lieu de `secrets.py`.** `secrets` est le nom d'un module standard de Python. Un fichier `lambda/secrets.py` le masquerait pour toutes les bibliothèques chargées par la skill.
 
-**Réflexion du modèle coupée.** Les modèles Claude actuels réfléchissent avant de répondre, et cette réflexion compte dans les 300 tokens de sortie et dans les 8 secondes. La skill la désactive et demande un effort `low`. Le mode « réfléchis à … » change donc la longueur et la structure de la réponse, pas la profondeur de raisonnement du modèle.
+**Réflexion du modèle coupée.** Les modèles Claude actuels réfléchissent avant de répondre, et cette réflexion compte dans les tokens de sortie et dans les 8 secondes. La skill la désactive et demande un effort `low`. Le mode « réfléchis à … » change donc la longueur et la structure de la réponse, pas la profondeur de raisonnement du modèle.
 
 ## Tests
 

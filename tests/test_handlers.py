@@ -136,7 +136,7 @@ def test_question_normal_uses_sonnet(load_event, api):
     assert call["headers"]["content-type"] == "application/json"
     body = call["json"]
     assert body["model"] == "claude-sonnet-5-5"
-    assert body["max_tokens"] == 300
+    assert body["max_tokens"] == 800
     assert "2 à 4 phrases" in body["system"]
     assert body["thinking"] == {"type": "between_tools"}
     # La phrase porteuse est remise devant le slot.

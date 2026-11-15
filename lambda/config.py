@@ -9,7 +9,7 @@ MODEL_DEFAULT = "claude-sonnet-5-5"   # questions normales
 MODEL_FAST = "claude-haiku-5-5"       # repli si les réponses sont trop souvent coupées
 MODEL_DEEP = "claude-sonnet-5-5"      # questions approfondies (DeepQuestionIntent)
 
-MAX_TOKENS_DEFAULT = 300
+MAX_TOKENS_DEFAULT = 800
 MAX_TOKENS_DEEP = 500
 
 # Alexa coupe la skill après environ 8 secondes : on abandonne l'appel avant.
