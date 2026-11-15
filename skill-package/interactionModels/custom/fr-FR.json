@@ -933,12 +933,12 @@
           "name": "FreeReplyIntent",
           "slots": [
             {
-              "name": "query",
+              "name": "reply",
               "type": "FreeText"
             }
           ],
           "samples": [
-            "{query}"
+            "{reply}"
           ]
         },
         {

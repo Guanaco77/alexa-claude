@@ -110,7 +110,15 @@ def test_free_reply_intent_uses_a_custom_slot_alone():
     """Un slot seul n'est permis qu'avec un type personnalisé, pas SearchQuery."""
     model = load_model()
     intent = next(i for i in model["intents"] if i["name"] == "FreeReplyIntent")
-    assert intent["slots"] == [{"name": "query", "type": "FreeText"}]
-    assert intent["samples"] == ["{query}"]
+    assert intent["slots"] == [{"name": "reply", "type": "FreeText"}]
+    assert intent["samples"] == ["{reply}"]
     types = {t["name"]: t for t in model["types"]}
     assert len(types["FreeText"]["values"]) >= 30
+
+
+def test_each_slot_name_has_a_single_type():
+    """Alexa refuse le build si un nom de slot référence deux types."""
+    types = {}
+    for intent in load_model()["intents"]:
+        for slot in intent.get("slots", []):
+            assert types.setdefault(slot["name"], slot["type"]) == slot["type"], slot

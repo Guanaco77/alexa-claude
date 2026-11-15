@@ -167,7 +167,6 @@ def test_followup_sends_history(load_event, api):
     [
         ("ReplyEnIntent", "novembre", "en novembre"),
         ("ReplyCEstIntent", "pour un gâteau", "c'est pour un gâteau"),
-        ("FreeReplyIntent", "novembre", "novembre"),
     ],
 )
 def test_reply_to_a_question_from_claude(load_event, api, intent_name, slot_value, expected):
@@ -179,6 +178,16 @@ def test_reply_to_a_question_from_claude(load_event, api, intent_name, slot_valu
     assert messages[-1] == {"role": "user", "content": expected}
     assert len(messages) == 3
     assert is_open(result)
+
+
+def test_free_reply_uses_its_own_slot(load_event, api):
+    event = load_event("question_followup")
+    event["request"]["intent"]["name"] = "FreeReplyIntent"
+    event["request"]["intent"]["slots"] = {
+        "reply": {"name": "reply", "value": "novembre", "confirmationStatus": "NONE"}
+    }
+    invoke(event)
+    assert api.calls[0]["json"]["messages"][-1] == {"role": "user", "content": "novembre"}
 
 
 def test_history_is_capped_at_five_exchanges(load_event, api):

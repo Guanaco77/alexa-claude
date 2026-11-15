@@ -69,9 +69,13 @@ def send_progressive_response(handler_input):
 
 
 def get_query(handler_input):
-    slot = ask_utils.get_slot(handler_input, "query")
-    value = slot.value if slot else None
-    return (value or "").strip()
+    # "query" pour les questions, "reply" pour la réponse libre : Alexa
+    # interdit qu'un même nom de slot ait deux types différents.
+    for name in ("query", "reply"):
+        slot = ask_utils.get_slot(handler_input, name)
+        if slot and slot.value:
+            return slot.value.strip()
+    return ""
 
 
 def build_question(intent_name, query):
