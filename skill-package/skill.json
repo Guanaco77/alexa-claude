@@ -7,9 +7,9 @@
           "summary": "Pose tes questions à Claude à la voix.",
           "description": "Skill privée qui transmet les questions à l'API Claude d'Anthropic et lit la réponse à voix haute, en français.",
           "examplePhrases": [
-            "Alexa, ouvre claude",
-            "Alexa, demande à claude pourquoi le ciel est bleu",
-            "Alexa, demande à claude de réfléchir à l'avenir des voitures électriques"
+            "Alexa, ouvre assistant claude",
+            "Alexa, demande à assistant claude pourquoi le ciel est bleu",
+            "Alexa, demande à assistant claude de réfléchir à l'avenir des voitures électriques"
           ],
           "keywords": []
         }

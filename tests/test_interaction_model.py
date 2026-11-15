@@ -24,7 +24,7 @@ def custom_intents():
 
 
 def test_invocation_name():
-    assert load_model()["invocationName"] == "claude" == config.INVOCATION_NAME
+    assert load_model()["invocationName"] == "assistant claude" == config.INVOCATION_NAME
 
 
 def test_only_french_locale():

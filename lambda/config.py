@@ -34,7 +34,7 @@ API_URL = "https://api.anthropic.com/v1/messages"
 API_VERSION = "2023-06-01"
 
 # --- Conversation ------------------------------------------------------------
-INVOCATION_NAME = "claude"   # doit correspondre à skill-package/.../fr-FR.json
+INVOCATION_NAME = "assistant claude"   # doit correspondre à skill-package/.../fr-FR.json
 MAX_HISTORY_TURNS = 5        # échanges (question + réponse) gardés en session
 MAX_SPEECH_CHARS = 1500      # longueur maximale lue à voix haute
 

@@ -2,9 +2,9 @@
 
 Une skill Alexa personnalisée qui envoie tes questions à l'API Claude d'Anthropic et lit la réponse sur tes Amazon Echo.
 
-- « Alexa, demande à Claude pourquoi le ciel est bleu » : question directe.
-- « Alexa, ouvre Claude » : conversation, plusieurs questions à la suite.
-- « Alexa, demande à Claude de réfléchir à … » : réponse plus longue et structurée.
+- « Alexa, demande à assistant Claude pourquoi le ciel est bleu » : question directe.
+- « Alexa, ouvre assistant Claude » : conversation, plusieurs questions à la suite.
+- « Alexa, demande à assistant Claude de réfléchir à … » : réponse plus longue et structurée.
 
 La skill est hébergée gratuitement par Amazon (Alexa-hosted, Python) et reste en mode Développement : elle ne fonctionne que sur les appareils liés à ton compte Amazon.
 
@@ -62,18 +62,18 @@ Ce fichier n'existe que chez Amazon. Il n'est pas dans le dépôt Git, et `.giti
 
 Onglet **Build** :
 
-1. Dans **Invocations > Skill Invocation Name**, vérifie que le nom est `claude`.
+1. Dans **Invocations > Skill Invocation Name**, vérifie que le nom est `assistant claude`.
 2. Clique sur **Build Model** et attends la fin du build.
 
-Si la console refuse un nom d'un seul mot, mets `assistant claude`, relance **Build Model**, et dis ensuite « Alexa, demande à assistant Claude … ».
+Le nom tient en deux mots parce que la console refuse `claude` seul au build.
 
 ### 7. Tester
 
 Onglet **Test** : passe le sélecteur sur **Development**, puis tape ou dis :
 
-- `demande à claude pourquoi le ciel est bleu`
-- `demande à claude de réfléchir à l'avenir des voitures électriques`
-- `ouvre claude`, puis `comment faire une pâte à crêpes`, puis `non merci`
+- `demande à assistant claude pourquoi le ciel est bleu`
+- `demande à assistant claude de réfléchir à l'avenir des voitures électriques`
+- `ouvre assistant claude`, puis `comment faire une pâte à crêpes`, puis `non merci`
 
 ### 8. Vérifier les Echo
 
@@ -126,7 +126,7 @@ Si les durées dépassent régulièrement 5 secondes ou si les `TIMEOUT` sont fr
 | « Je reçois trop de demandes à la fois. » ou « Le service Claude est surchargé. » | Limite de débit ou surcharge passagère côté Anthropic. Réessaie plus tard. |
 | « Ma demande a été refusée par le service Claude. » | L'API a rejeté la requête (modèle inconnu, réglage invalide). Le message exact est dans les journaux. |
 | Alexa répond qu'elle ne trouve pas la skill | Echo dans une autre langue que Français (France), autre compte Amazon, ou test non passé sur **Development** (étape 7). |
-| Alexa comprend « Claude » de travers ou lance autre chose | Change le nom d'invocation en `assistant claude` (étape 6) et relance **Build Model**. |
+| Alexa comprend le nom de travers ou lance autre chose | Dis bien « assistant Claude » en deux mots. Si ça persiste, choisis un autre nom d'invocation de deux mots (étape 6) et relance **Build Model**. |
 | « Je n'ai pas compris. » | La phrase ne commence par aucune tournure connue. Commence par pourquoi, comment, explique-moi, dis-moi, etc. |
 | Pas de « Je réfléchis… » avant la réponse | Sans gravité : l'annonce d'attente a échoué, la raison est dans les journaux. La réponse arrive quand même. |
 
