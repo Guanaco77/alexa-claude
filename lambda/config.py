@@ -21,7 +21,7 @@ EFFORT_DEFAULT = "low"
 EFFORT_DEEP = "low"
 
 # Les modèles récents réfléchissent avant de répondre, ce qui consomme du temps
-# et des tokens de sortie. Avec 8 secondes et 300 tokens, on coupe cette
+# et des tokens de sortie. Avec 8 secondes pour répondre, on coupe cette
 # réflexion. La valeur à envoyer dépend du modèle ; un modèle absent de cette
 # table est appelé sans réglage (comportement par défaut de l'API).
 THINKING_OFF = {
