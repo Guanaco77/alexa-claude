@@ -1,2 +1,5 @@
 ask-sdk-core==1.19.0
 requests>=2.20.0
+# urllib3 2.x refuse de se charger sur les runtimes Lambda dont OpenSSL est
+# antérieur à 1.1.1 (Python 3.9 et moins) : la skill planterait au démarrage.
+urllib3<2
