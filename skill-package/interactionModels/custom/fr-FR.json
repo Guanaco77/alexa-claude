@@ -1,0 +1,495 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "claude",
+      "intents": [
+        {
+          "name": "QuestionIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "j'ai une question {query}",
+            "je voudrais savoir {query}",
+            "j'aimerais savoir {query}",
+            "je veux savoir {query}",
+            "ma question est {query}",
+            "la question suivante {query}",
+            "de répondre à {query}",
+            "réponds à {query}"
+          ]
+        },
+        {
+          "name": "QuestionPourquoiIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "pourquoi {query}",
+            "pour quelle raison {query}"
+          ]
+        },
+        {
+          "name": "QuestionCommentIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "comment {query}"
+          ]
+        },
+        {
+          "name": "QuestionQuEstCeQueIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "qu'est-ce que {query}"
+          ]
+        },
+        {
+          "name": "QuestionCEstQuoiIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "c'est quoi {query}"
+          ]
+        },
+        {
+          "name": "QuestionQuiIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "qui {query}"
+          ]
+        },
+        {
+          "name": "QuestionQuiEstIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "qui est {query}"
+          ]
+        },
+        {
+          "name": "QuestionQuiEtaitIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "qui était {query}"
+          ]
+        },
+        {
+          "name": "QuestionQueIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "que {query}"
+          ]
+        },
+        {
+          "name": "QuestionQuelIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "quel {query}",
+            "quelle {query}",
+            "quels {query}",
+            "quelles {query}"
+          ]
+        },
+        {
+          "name": "QuestionQuelEstIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "quel est {query}"
+          ]
+        },
+        {
+          "name": "QuestionQuelleEstIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "quelle est {query}"
+          ]
+        },
+        {
+          "name": "QuestionQuelsSontIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "quels sont {query}",
+            "quelles sont {query}"
+          ]
+        },
+        {
+          "name": "QuestionCombienIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "combien {query}"
+          ]
+        },
+        {
+          "name": "QuestionQuandIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "quand {query}"
+          ]
+        },
+        {
+          "name": "QuestionOuIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "où {query}"
+          ]
+        },
+        {
+          "name": "QuestionEstCeQueIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "est-ce que {query}"
+          ]
+        },
+        {
+          "name": "QuestionSaisTuIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "sais-tu {query}"
+          ]
+        },
+        {
+          "name": "QuestionPeuxTuIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "peux-tu {query}",
+            "tu peux {query}"
+          ]
+        },
+        {
+          "name": "QuestionExpliqueIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "explique-moi {query}",
+            "de m'expliquer {query}",
+            "explique {query}",
+            "d'expliquer {query}"
+          ]
+        },
+        {
+          "name": "QuestionDisMoiIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "dis-moi {query}",
+            "de me dire {query}"
+          ]
+        },
+        {
+          "name": "QuestionRaconteIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "raconte-moi {query}",
+            "de me raconter {query}",
+            "raconte {query}"
+          ]
+        },
+        {
+          "name": "QuestionDonneIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "donne-moi {query}",
+            "de me donner {query}"
+          ]
+        },
+        {
+          "name": "QuestionAideIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "aide-moi à {query}",
+            "de m'aider à {query}"
+          ]
+        },
+        {
+          "name": "QuestionTraduisIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "traduis {query}",
+            "de traduire {query}"
+          ]
+        },
+        {
+          "name": "QuestionCalculeIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "calcule {query}",
+            "de calculer {query}"
+          ]
+        },
+        {
+          "name": "QuestionResumeIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "résume {query}",
+            "de résumer {query}"
+          ]
+        },
+        {
+          "name": "QuestionDefinisIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "définis {query}",
+            "de définir {query}"
+          ]
+        },
+        {
+          "name": "QuestionProposeIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "propose-moi {query}",
+            "de me proposer {query}"
+          ]
+        },
+        {
+          "name": "QuestionTrouveIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "trouve-moi {query}",
+            "de me trouver {query}"
+          ]
+        },
+        {
+          "name": "QuestionQuePensesTuIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "que penses-tu de {query}",
+            "ce que tu penses de {query}"
+          ]
+        },
+        {
+          "name": "QuestionParleMoiIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "parle-moi de {query}",
+            "de me parler de {query}"
+          ]
+        },
+        {
+          "name": "QuestionEtIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "et {query}"
+          ]
+        },
+        {
+          "name": "DeepQuestionIntent",
+          "slots": [
+            {
+              "name": "query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "de réfléchir à {query}",
+            "réfléchis à {query}",
+            "réfléchis bien {query}",
+            "réfléchis bien à {query}",
+            "de bien réfléchir à {query}",
+            "en détail {query}",
+            "de m'expliquer en détail {query}",
+            "explique-moi en détail {query}",
+            "analyse {query}",
+            "d'analyser {query}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "au revoir",
+            "merci au revoir",
+            "à bientôt"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "non merci",
+            "c'est tout",
+            "non c'est tout",
+            "c'est tout merci",
+            "rien d'autre",
+            "ça ira"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  }
+}
